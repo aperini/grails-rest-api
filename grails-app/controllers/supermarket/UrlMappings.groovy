@@ -15,6 +15,10 @@ class UrlMappings {
         "404"(view: '/notFound')
 
         "/itens"(resources:"Item")
+
         "/acomprar"(controller: 'Item', action: 'acomprar')
+
+        //TODO
+        "/itens/delete"(controller: 'Item', action: 'deleteArray')
     }
 }

@@ -1,6 +1,5 @@
 package supermarket.item
 
-
 import grails.rest.*
 import grails.converters.*
 
@@ -16,4 +15,8 @@ class ItemController extends RestfulController {
         respond Item.findAllByQuantidadeGreaterThan(0), view: 'index'
     }
 
+    def deleteArray() {
+        //TODO
+        respond null;
+    }
 }
